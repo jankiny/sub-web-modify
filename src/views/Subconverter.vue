@@ -478,14 +478,21 @@ export default {
           "sub.cm": "https://sub.cm/short",
         },
         customBackend: {
-          "肥羊增强型后端【vless reality+anytls】": "https://api.v1.mk",
-          "肥羊备用后端【vless reality+anytls】": "https://url.v1.mk",
+          "Janki后端【subconverter】": https://sub.zhlei.com",
         },
         backendOptions: [
-          {value: "https://api.v1.mk"},
-          {value: "https://url.v1.mk"},
+          {value: "https://sub.zhlei.com/sub?" },
         ],
         remoteConfig: [
+          {
+            label: "Jankiny 自用规则",
+            options: [
+              {
+                label: "Jankiny 标准分流",
+                value: "https://mirror.ghproxy.com/https://raw.githubusercontent.com/jankiny/ClashRules/main/config.ini"
+              }
+            ]
+          },
           {
             label: "通用",
             options: [
@@ -1416,6 +1423,7 @@ export default {
   }
 };
 </script>
+
 
 
 
