@@ -877,7 +877,7 @@ export default {
       form: {
         sourceSubUrl: "",
         clientType: "",
-        customBackend: this.getUrlParam() == "" ? "Janki后端【subconverter】" : this.getUrlParam(),
+        customBackend: this.getUrlParam() == "" ? "https://sub.zhlei.com" : this.getUrlParam(),
         shortType: "https://sl.zhlei.com/short",
         remoteConfig: "https://raw.githubusercontent.com/jankiny/ClashRules/main/config.ini",
         excludeRemarks: "",
@@ -1410,6 +1410,7 @@ export default {
   }
 };
 </script>
+
 
 
 
