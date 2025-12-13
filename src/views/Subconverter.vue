@@ -476,7 +476,7 @@ export default {
             options: [
               {
                 label: "Janki 标准分流",
-                value: "https://mirror.ghproxy.com/https://raw.githubusercontent.com/jankiny/ClashRules/main/config.ini"
+                value: "https://raw.githubusercontent.com/jankiny/ClashRules/main/config.ini"
               }
             ]
           },
@@ -1410,6 +1410,7 @@ export default {
   }
 };
 </script>
+
 
 
 
