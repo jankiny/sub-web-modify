@@ -472,7 +472,7 @@ export default {
           "sl.zhlei.com": "https://sl.zhlei.com/short",
         },
         customBackend: {
-          "Janki后端【subconverter】": "https://sub.zhlei.com",
+          "Janki 后端【subconverter】": "https://sub.zhlei.com",
         },
         backendOptions: [
           {value: "https://sub.zhlei.com" },
@@ -484,7 +484,11 @@ export default {
               {
                 label: "Janki 标准分流",
                 value: "https://mgit.zhlei.com/https://raw.githubusercontent.com/jankiny/ClashRules/main/config.ini"
-              }
+              }，
+              {
+                label: "Janki 本地极速规则",
+                value: "local_rule.ini" 
+              },
             ]
           },
           {
@@ -1421,6 +1425,7 @@ export default {
   }
 };
 </script>
+
 
 
 
