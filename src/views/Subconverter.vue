@@ -478,7 +478,7 @@ export default {
           "sub.cm": "https://sub.cm/short",
         },
         customBackend: {
-          "Janki后端【subconverter】": https://sub.zhlei.com",
+          "Janki后端【subconverter】": "https://sub.zhlei.com",
         },
         backendOptions: [
           {value: "https://sub.zhlei.com/sub?" },
@@ -1423,6 +1423,7 @@ export default {
   }
 };
 </script>
+
 
 
 
