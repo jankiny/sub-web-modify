@@ -879,7 +879,7 @@ export default {
         clientType: "",
         customBackend: this.getUrlParam() == "" ? "Janki后端【subconverter】" : this.getUrlParam(),
         shortType: "https://sl.zhlei.com/short",
-        remoteConfig: "https://mirror.ghproxy.com/https://raw.githubusercontent.com/jankiny/ClashRules/main/config.ini",
+        remoteConfig: "https://raw.githubusercontent.com/jankiny/ClashRules/main/config.ini",
         excludeRemarks: "",
         includeRemarks: "",
         filename: "",
@@ -1410,6 +1410,7 @@ export default {
   }
 };
 </script>
+
 
 
 
