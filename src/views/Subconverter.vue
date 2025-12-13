@@ -90,6 +90,13 @@
                     <el-form-item label="自定义UA:">
                       <el-input v-model="form.diyua" placeholder="设置后端获取订阅链接时所用的自定义User-Agent"/>
                     </el-form-item>
+                    <el-form-item label="后端密码:">
+                      <el-input 
+                        v-model="form.password" 
+                        placeholder="请输入后端访问密码 (Token)" 
+                        show-password
+                      />
+                    </el-form-item>
                     <el-form-item label="包含节点:">
                       <el-input v-model="form.includeRemarks" placeholder="要保留的节点，支持正则"/>
                     </el-form-item>
@@ -878,6 +885,7 @@ export default {
         sourceSubUrl: "",
         clientType: "",
         customBackend: this.getUrlParam() == "" ? "https://sub.zhlei.com" : this.getUrlParam(),
+        password: "",
         shortType: "https://sl.zhlei.com/short",
         remoteConfig: "https://mgit.zhlei.com/https://raw.githubusercontent.com/jankiny/ClashRules/main/config.ini",
         excludeRemarks: "",
@@ -1140,6 +1148,9 @@ export default {
       if (this.form.diyua.trim() !== "") {
         this.customSubUrl +=
             "&diyua=" + encodeURIComponent(this.form.diyua);
+      }
+      if (this.form.password.trim() !== "") {
+        this.customSubUrl += "&token=" + encodeURIComponent(this.form.password);
       }
       this.$copyText(this.customSubUrl);
       this.$message.success("定制订阅已复制到剪贴板");
@@ -1410,6 +1421,7 @@ export default {
   }
 };
 </script>
+
 
 
 
