@@ -254,15 +254,6 @@
                 >从URL解析
                 </el-button>
               </el-form-item>
-              <el-form-item label-width="0px" style="text-align: center">
-                <el-button
-                    style="width: 250px;"
-                    type="success"
-                    icon="el-icon-video-play"
-                    @click="centerDialogVisible = true"
-                >视频教程
-                </el-button>
-              </el-form-item>
             </el-form>
           </el-container>
         </el-card>
@@ -471,17 +462,13 @@ export default {
           "自动判断客户端": "auto",
         },
         shortTypes: {
-          "v1.mk": "https://v1.mk/short",
-          "d1.mk": "https://d1.mk/short",
-          "dlj.tf": "https://dlj.tf/short",
-          "suo.yt": "https://suo.yt/short",
-          "sub.cm": "https://sub.cm/short",
+          "sl.zhlei.com": "https://sl.zhlei.com/short",
         },
         customBackend: {
           "Janki后端【subconverter】": "https://sub.zhlei.com",
         },
         backendOptions: [
-          {value: "https://sub.zhlei.com/sub?" },
+          {value: "https://sub.zhlei.com" },
         ],
         remoteConfig: [
           {
@@ -890,9 +877,9 @@ export default {
       form: {
         sourceSubUrl: "",
         clientType: "",
-        customBackend: this.getUrlParam() == "" ? "https://sub.zhlei.com/sub?" : this.getUrlParam(),
-        shortType: "https://v1.mk/short",
-        remoteConfig: "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_Full_NoAuto.ini",
+        customBackend: this.getUrlParam() == "" ? "Janki后端【subconverter】" : this.getUrlParam(),
+        shortType: "https://sl.zhlei.com/short",
+        remoteConfig: "https://mirror.ghproxy.com/https://raw.githubusercontent.com/jankiny/ClashRules/main/config.ini",
         excludeRemarks: "",
         includeRemarks: "",
         filename: "",
@@ -1423,6 +1410,7 @@ export default {
   }
 };
 </script>
+
 
 
 
