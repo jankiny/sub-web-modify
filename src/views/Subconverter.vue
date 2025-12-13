@@ -484,7 +484,7 @@ export default {
               {
                 label: "Janki 标准分流",
                 value: "https://mgit.zhlei.com/https://raw.githubusercontent.com/jankiny/ClashRules/main/config.ini"
-              }，
+              },
               {
                 label: "Janki 本地极速规则",
                 value: "local_rule.ini" 
@@ -1425,6 +1425,7 @@ export default {
   }
 };
 </script>
+
 
 
 
