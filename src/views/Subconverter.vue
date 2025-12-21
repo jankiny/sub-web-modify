@@ -475,8 +475,8 @@ export default {
             label: "Janki自用规则",
             options: [
               {
-                label: "Janki 标准分流",
-                value: "https://mgit.zhlei.com/https://raw.githubusercontent.com/jankiny/ClashRules/main/config.ini"
+                label: "Janki 加速标准分流",
+                value: "https://mgit.zhlei.com/https://raw.githubusercontent.com/jankiny/ClashRules/main/ACL4SSR_Online_Full_NoAuto.ini"
               },
             ]
           },
@@ -1411,6 +1411,7 @@ export default {
   }
 };
 </script>
+
 
 
 
